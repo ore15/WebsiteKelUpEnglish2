@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(black, purple);
+    font-family: "Poiret One", sans-serif;
+}
+
+.paralax{
+    position: relative;
+    width: 100%;
+    height: 200vh;
+    padding: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.paralax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.paralax img#meteroid{
+    z-index: 100;
+}
+#text{
+    position: absolute;
+    font-size: 3.8em;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 3px 3px 10px black;
+    bottom: -5;
+
+}
+#text2{
+    position: absolute;
+    font-size: 1em;
+    color: black;
+    background-color: white;
+    padding: 10px 50px;
+    border-radius: 20px;
+    transform: translateY(100px);
+}
+.description{
+    position: relative;
+    padding: 7em;
+    background-color: lightgray;
+}
+.description p{
+    font-size: 3em;
+}
+/* hape */
+@media (min-width: 113px) {
+    .paralax{
+        width: 175%;
+    }
+    .description{
+        width: 200%;
+       
+    }
+}
+/* hape */
+@media (max-width: 508px) {
+    .paralax{
+        width: 175%;
+    }
+    .description{
+        width: 175%;
+       
+    }
+}
+/* hape */
+@media (min-width: 509px) {
+    .paralax{
+        width: 175%;
+    }
+    .description{
+        width: 175%;
+       
+    }
+}
+/* hape */
+@media (min-width: 600px) {
+    .paralax{
+        width: 130%;
+    }
+    .description{
+        width: 130%;
+    }
+}
+/* tablet */
+@media (min-width: 768px){
+     .paralax{
+        width: 100%;
+     }
+     .description{
+        width: 100%;
+     }
+}
+
+/* dekstop */
+@media (min-width: 992px){
+    .paralax{
+        width: 100%;
+    }
+    .description{
+        width: 100%;
+    }
+}
